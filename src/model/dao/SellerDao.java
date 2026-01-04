@@ -1,0 +1,14 @@
+package model.dao;
+
+import entities.Department;
+import entities.Seller;
+
+import java.util.List;
+
+public interface SellerDao {
+    void insert(Seller obj);
+    void update(Seller obj);
+    void deletebyld(Integer id);
+    Seller findbyld(Integer id);
+    List<Seller> findAll();
+}
