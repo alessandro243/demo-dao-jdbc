@@ -28,5 +28,9 @@ public class Program {
         for(Seller seller1: sellers2){
             System.out.println(seller1);
         }
+
+        Seller newSeller = new Seller(null, "Greg", "greg@gmail.com", new Date(), 4000.0, department);
+        sellerDao.insert(newSeller);
+        System.out.println(newSeller.getId());
     }
 }
